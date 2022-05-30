@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 104px;
+  padding: 0 80px;
+
+
+  background: $green-light;
+  .logo {
+    height: 32px;
+  }
+  .box-user {
+    display: flex;
+    align-items: center;
+    height: 52px;
+   
+    .avatar {
+      height: 82px;
+    }
+    .content-user {
+      display: inline;
+      align-items: center;
+      .name {
+        font-weight: 700;
+      }
+      .content-email {
+        display: flex;
+        align-items: center;
+        .email {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

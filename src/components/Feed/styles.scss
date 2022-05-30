@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.feed-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 80px;
+  gap: 24px;
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    height: 200px;
+    margin-top: 32px;
+    margin-bottom: 21px;;
+
+    .card-button {
+      background: $green;
+      color: $white;
+      border: none;
+      border-radius: 0 0 10px 10px;
+      padding: 21px 0;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.modal-wrapper {
+  .close-modal {
+    position: absolute;
+    height: 14px;
+    left: 90%;
+    right: 3%;
+    top: 3%;
+    bottom: 90%;
+  }
+  .modal-header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 24px;
+    margin-top: 105px;
+    margin-bottom: 20px;
+
+    .modal-title {
+      font-weight: 700;
+      color:$green;
+    }
+  }
+  .game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    border: 1px solid rgba(62, 66, 55, 0.3);
+
+    .game-date {
+      height: 22px;
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 32px;
+      font-weight: 700;
+      span {
+        font-weight: 400;
+      }
+    }
+    .game-result {
+      display: flex;
+      align-items:center;
+      margin-bottom: 16px;
+      p {
+        padding: 0 24px;
+        font-weight: 700;
+      }
+      .game-score {
+        color: $green;
+      }
+    }
+  }
+}

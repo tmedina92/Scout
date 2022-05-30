@@ -1,0 +1,62 @@
+@import '../../styles/variables.scss';
+
+.search-container {
+  display: block;
+  align-items: center;
+  background: $green-white;
+  height: 210px;
+  padding: 40px 80px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  
+  .input-container {
+    margin-bottom: 40px;
+
+    .input-icon{
+      padding: 10px 16px;
+      position: absolute;
+    }
+    .input {
+      padding-left: 50px;
+      height: 40px;
+      width : 448px;
+      border: $green 1px solid;
+      border-radius: 8px;
+    }
+    .input::placeholder {
+      color: $green;
+    }
+  }
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 48px;
+    gap: 24px;
+    flex-wrap: wrap;
+
+    .button-all {
+      background: $green;
+      border: $green 1px solid;
+      border-radius: 50px;
+      height: 48px;
+      color: $white;
+      padding: 13px 24px;
+    }
+
+    .button {
+      background: $white;
+      border: $green 1px solid;
+      border-radius: 50px;
+      height: 48px;
+      color: $green;
+      padding: 13px 24px;
+    }
+    .button:hover {
+      background: $green-white;
+      transition: 0.3s;
+    }
+    .button:focus {
+      background: $green-white;
+    }
+  }
+}

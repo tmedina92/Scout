@@ -1,9 +1,12 @@
 @import '../../styles/variables.scss';
 
 .modal-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  
   .close-modal {
     position: absolute;
-    height: 14px;
     left: 90%;
     right: 3%;
     top: 3%;
@@ -25,10 +28,14 @@
   .game-wrapper {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 
     border: 1px solid rgba(62, 66, 55, 0.3);
 
+    img {
+      height: 58px;
+      width: 48px;
+    }
     .game-date {
       height: 22px;
       width: 100%;
@@ -36,6 +43,7 @@
       margin-top: 16px;
       margin-bottom: 32px;
       font-weight: 700;
+
       span {
         font-weight: 400;
       }
@@ -44,6 +52,7 @@
       display: flex;
       align-items:center;
       margin-bottom: 16px;
+      
       p {
         padding: 0 24px;
         font-weight: 700;

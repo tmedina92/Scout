@@ -6,10 +6,10 @@ import { Search } from "../components/Search/index";
 export function Home() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Search />
-      <Feed /> */}
-      <Modal />
+      <Feed />
+      {/* <Modal /> */}
     </>
   )
 }

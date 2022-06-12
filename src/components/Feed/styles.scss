@@ -3,8 +3,10 @@
 .feed-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  width: 100%;
   padding: 0 80px;
-  gap: 24px;
+  gap: 25px;
 
   .card-container {
     display: flex;
